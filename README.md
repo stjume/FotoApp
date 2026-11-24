@@ -10,7 +10,7 @@ The app provides a live camera preview, allows users to capture photos, switch c
 
 The current version is available on GitHub Pages:
 
-https://r1yaaa.github.io/FotoApp/
+https://stjume.github.io/FotoApp/
 
 ---
 
@@ -38,7 +38,7 @@ https://r1yaaa.github.io/FotoApp/
 Clone the repository:
 
 ```bash
-git clone https://github.com/r1yaaa/FotoApp.git
+git clone https://github.com/stjume/FotoApp.git
 ```
 
 Install the packages
