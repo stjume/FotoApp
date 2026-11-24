@@ -10,7 +10,8 @@
 		Trash2,
 		PencilSparkles,
 		Share2,
-		Printer
+		Printer,
+		Download
 	} from '@lucide/svelte';
 
     let videoRef = $state<any>();
@@ -416,6 +417,10 @@
 
 			<button class="rounded-2xl bg-gray-300 px-4 py-2 transition-all duration-200 hover:scale-105 cursor-pointer" onclick={sharePhoto} aria-label = "Foto teilen" title="Foto teilen">
 				<Share2 size=28/>
+			</button>
+
+			<button class="rounded-2xl bg-gray-300 px-4 py-2 transition-all duration-200 hover:scale-105 cursor-pointer" onclick={savePhoto} aria-label="Foto herunterladen" title="Foto herunterladen">
+				<Download size={28}/>
 			</button>
 
 			<button class="rounded-2xl bg-gray-300 px-4 py-2 transition-all duration-200 hover:scale-105 cursor-pointer" onclick={printPhoto} aria-label = "Foto drucken" title="Foto drucken">
