@@ -236,10 +236,7 @@
 	}
 
 	async function sharePhoto() {
-		if (!photoUrl) {
-			console.warn("No photo available to share.");
-			return;
-		}
+		if (!photoUrl) return;
 
 		const response = await fetch(photoUrl);
 		const blob = await response.blob();
@@ -250,12 +247,8 @@
 
 		if (navigator.canShare && navigator.canShare({ files: [file] })) {
 			await navigator.share({
-				files: [file],
-				title: "Gruppenfoto",
-				text: "Hier ist das Gruppenfoto."
+				files: [file]
 			});
-		} else {
-			console.warn("Sharing files is not supported on this device/browser.");
 		}
 	}
 
